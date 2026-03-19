@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VG Tharindu Sampath | Software Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+     <div id="cur"></div>
+     <div id="cur-ring"></div>
+
+    <!-- NAV -->
+    <nav>
+    <a href="#hero" class="nav-logo">Vg<span>.dev</span></a>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="stars"></div>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+
+    <div class="hero-left">
+        <div class="hero-greeting">Hello, world</div>
+        <h1 class="hero-name">
+        <span class="gradient-name">Vg Tharindu</span>
+        </h1>
+        <p class="hero-tagline">
+        Building <strong>Scalable softwares, Web & Mobile Apps</strong>.
+        Passionate IT Student | Exploring the Boundless World of Technology
+        </p>
+        <div class="hero-role">
+        <span class="role-prefix">&gt;</span>
+        <span id="typingText" class="typing"></span>
+        </div>
+        <div class="hero-btns">
+        <a href="#projects" class="btn btn-p">View My Work →</a>
+        <a href="#contact" class="btn btn-g">Get In Touch</a>
+        </div>
+        <div class="hero-stats">
+        <div><div class="hst-num">2+</div><div class="hst-lbl">Years Coding</div></div>
+        <div><div class="hst-num">10+</div><div class="hst-lbl">Projects Built</div></div>
+        <div><div class="hst-num">5+</div><div class="hst-lbl">Tech Stack</div></div>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="photo-wrap">
+        <div class="photo-border"></div>
+        <div class="photo-inner">
+            <!--
+            ══════════════════════════════════════
+            TO ADD YOUR PHOTO — delete the <div class="avatar-ph">
+            block below and replace with:
+            <img src="your-photo.jpg" alt="Vg Tharindu"
+                style="width:100%;height:100%;object-fit:cover;object-position:top center;">
+            ══════════════════════════════════════
+            -->
+            <div class="avatar-ph">
+            <div class="avatar-letters">VT</div>
+            <div class="avatar-hint">REPLACE WITH YOUR PHOTO<br>See HTML comment above</div>
+            </div>
+        </div>
+        <div class="photo-tag tl"><div class="tdot g"></div>Available</div>
+        <div class="photo-tag br"><div class="tdot b"></div>Sri Lanka 🇱🇰</div>
+        </div>
+    </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+    <div class="eyebrow reveal">01 — About</div>
+    <h2 class="sec-title reveal">Who I Am</h2>
+    <div class="about-grid">
+        <div class="about-text reveal">
+        <p>Hey! I'm <strong>VG Tharindu Sampath</strong>, an undergraduate student at SLIATE with a deep passion for software engineering. I love turning complex problems into clean, functional solutions.</p>
+        <p>My journey started with curiosity about how applications work under the hood. That curiosity evolved into a real love for <strong>programming, system design, and building things</strong> that people actually use.</p>
+        <p>Currently sharpening my skills across the full stack with a strong focus on <strong>backend systems, mobile development, and modern web technologies</strong>.</p>
+        <div class="info-list">
+            <div class="info-row"><div class="info-ico">🎓</div><span class="info-k">Institute:</span><span class="info-v">SLIATE</span></div>
+            <div class="info-row"><div class="info-ico">📄</div><span class="info-k">Qualification:</span><span class="info-v">HND in Information Technology</span></div>
+            <div class="info-row"><div class="info-ico">🎯</div><span class="info-k">Goal:</span><span class="info-v">Become a Software Engineer</span></div>
+            <div class="info-row"><div class="info-ico">📍</div><span class="info-k">Location:</span><span class="info-v">Sri Lanka</span></div>
+            <div class="info-row"><div class="info-ico">💬</div><span class="info-k">Languages:</span><span class="info-v">Sinhala, English</span></div>
+        </div>
+        <div class="edu-card" style="margin-top:20px;">
+            <div class="edu-icon">🎓</div>
+            <div>
+            <div class="edu-degree">Higher National Diploma in Information Technology</div>
+            <div class="edu-school">SLIATE — Sri Lanka Institute of Advanced Technological Education</div>
+            <div class="edu-badge">Undergraduate · In Progress</div>
+            </div>
+        </div>
+        </div>
+
+        <div class="reveal">
+        <div class="code-card">
+            <div class="code-bar">
+            <div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>
+            <span class="code-fname">tharindu.json</span>
+            </div>
+            <div class="code-body">
+    <pre><span class="cm">// Developer Profile</span>
+    <span class="kw">const</span> <span class="cn">dev</span> = {
+    <span class="fn">name</span>: <span class="str">"VG Tharindu Sampath"</span>,
+    <span class="fn">alias</span>: <span class="str">"Vg Tharindu"</span>,
+    <span class="fn">education</span>: <span class="str">"HND IT @ SLIATE"</span>,
+    <span class="fn">status</span>: <span class="str">"Undergraduate Student"</span>,
+    <span class="fn">location</span>: <span class="str">"Sri Lanka 🇱🇰"</span>,
+    <span class="fn">mainLanguage</span>: <span class="str">"Java"</span>,
+    <span class="fn">currentlyDoing</span>: [
+        <span class="str">"Learning every day"</span>,
+        <span class="str">"Building mobile apps"</span>,
+        <span class="str">"Open to internships"</span>,
+    ],
+    <span class="fn">passion</span>: <span class="str">"Software Engineering"</span>,
+    <span class="fn">available</span>: <span class="cn">true</span>,
+    };</pre>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="eyebrow reveal">02 — Skills</div>
+        <h2 class="sec-title reveal">My Toolkit</h2>
+        <p class="sec-sub reveal">Technologies and tools I work with to bring ideas to life.</p>
+        <div class="skills-grid">
+
+            <!-- Programming Languages -->
+            <div class="skill-cat reveal">
+                <div class="cat-title">⚡ Programming Languages</div>
+                <div class="sk-item"><div class="sk-row"><span class="sk-name">Java <span style="font-size:10px;color:var(--amber);">★ Main</span></span><span class="sk-pct">90%</span></div><div class="sk-track"><div class="sk-fill" data-w="90"></div></div></div>
+                <div class="sk-item"><div class="sk-row"><span class="sk-name">C#</span><span class="sk-pct">80%</span></div><div class="sk-track"><div class="sk-fill" data-w="80"></div></div></div>
+                <div class="sk-item"><div class="sk-row"><span class="sk-name">JavaScript</span><span class="sk-pct">75%</span></div><div class="sk-track"><div class="sk-fill" data-w="75"></div></div></div>
+                <div class="sk-item"><div class="sk-row"><span class="sk-name">Dart</span><span class="sk-pct">70%</span></div><div class="sk-track"><div class="sk-fill" data-w="70"></div></div></div>
+                <div class="sk-item"><div class="sk-row"><span class="sk-name">Python</span><span class="sk-pct">65%</span></div><div class="sk-track"><div class="sk-fill" data-w="65"></div></div></div>
+                <div class="tech-tags"><span class="tech-tag">IntelliJ IDEA</span><span class="tech-tag">OOP (Java 85%)</span></div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="skill-cat reveal">
+                <div class="cat-title">🌐 Web Development</div>
+                <div class="sk-item"><div class="sk-row"><span class="sk-name">HTML / CSS</span><span class="sk-pct">90%</span></div><div class="sk-track"><div class="sk-fill" data-w="90"></div></div></div>
+                <div class="sk-item"><div class="sk-row"><span class="sk-name">PHP</span><span class="sk-pct">75%</span></div><div class="sk-track"><div class="sk-fill" data-w="75"></div></div></div>
+                <div class="sk-item"><div class="sk-row"><span class="sk-name">Bootstrap</span><span class="sk-pct">80%</span></div><div class="sk-track"><div class="sk-fill" data-w="80"></div></div></div>
+                <div class="sk-item"><div class="sk-row"><span class="sk-name">React.js</span><span class="sk-pct">60%</span></div><div class="sk-track"><div class="sk-fill" data-w="60"></div></div></div>
+                <div class="tech-tags"><span class="tech-tag">JavaScript</span><span class="tech-tag">REST API</span><span class="tech-tag">Node.js</span></div>
+            </div>
+
+            <!-- Database -->
+            <div class="skill-cat reveal">
+                <div class="cat-title">🗄️ Database &amp; Backend</div>
+                <div class="sk-item"><div class="sk-row"><span class="sk-name">MySQL</span><span class="sk-pct">85%</span></div><div class="sk-track"><div class="sk-fill" data-w="85"></div></div></div>
+                <div class="sk-item"><div class="sk-row"><span class="sk-name">Firebase</span><span class="sk-pct">70%</span></div><div class="sk-track"><div class="sk-fill" data-w="70"></div></div></div>
+                <div class="sk-item"><div class="sk-row"><span class="sk-name">MongoDB</span><span class="sk-pct">55%</span></div><div class="sk-track"><div class="sk-fill" data-w="55"></div></div></div>
+                <div class="tech-tags"><span class="tech-tag">XAMPP</span><span class="tech-tag">WAMP</span><span class="tech-tag">phpMyAdmin</span></div>
+            </div>
+
+            <!-- Mobile Development -->
+            <div class="skill-cat reveal">
+                <div class="cat-title">📱 Mobile Development</div>
+                <div class="sk-item"><div class="sk-row"><span class="sk-name">Flutter</span><span class="sk-pct">72%</span></div><div class="sk-track"><div class="sk-fill" data-w="72"></div></div></div>
+                <div class="sk-item"><div class="sk-row"><span class="sk-name">Dart</span><span class="sk-pct">70%</span></div><div class="sk-track"><div class="sk-fill" data-w="70"></div></div></div>
+                <div class="sk-item"><div class="sk-row"><span class="sk-name">Android (Java)</span><span class="sk-pct">65%</span></div><div class="sk-track"><div class="sk-fill" data-w="65"></div></div></div>
+                <div class="tech-tags"><span class="tech-tag">Android Studio</span><span class="tech-tag">Firebase</span></div>
+            </div>
+
+            <!-- Tools & Workflow -->
+            <div class="skill-cat reveal" style="grid-column:1/-1;max-width:580px;">
+                <div class="cat-title">🛠️ Tools &amp; Workflow</div>
+                <div class="tech-tags">
+                    <span class="tech-tag">GitHub</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">IntelliJ IDEA</span>
+                    <span class="tech-tag">Android Studio</span>
+                    <span class="tech-tag">VS Code</span>
+                    <span class="tech-tag">Figma</span>
+                    <span class="tech-tag">ClickUp</span>
+                    <span class="tech-tag">Postman</span>
+                    <span class="tech-tag">Linux</span>
+                    <span class="tech-tag">Agile / Scrum</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="eyebrow reveal">03 — Projects</div>
+        <h2 class="sec-title reveal">What I've Built</h2>
+        <p class="sec-sub reveal">A selection of projects built while learning and growing. Click links to explore each project.</p>
+        <div class="projects-grid">
+
+            <!-- PROJECT 1 -->
+            <div class="project-card reveal">
+                <div class="proj-img">
+                    <!--
+                    ADD PROJECT SCREENSHOT:
+                    Replace <div class="proj-img-placeholder"> with:
+                    <img src="project1-screenshot.jpg" alt="Project Name">
+                    -->
+                    <div class="proj-img-placeholder" style="background:linear-gradient(135deg,#0d1f3c,#0a142a);">
+                        <div class="proj-img-icon">🖥️</div>
+                        <div class="proj-img-label">ADD SCREENSHOT</div>
+                    </div>
+                    <div class="proj-img-top">
+                        <div class="proj-status s-done">Completed</div>
+                    </div>
+                </div>
+                <div class="proj-body">
+                    <div class="proj-name">Your Project Title</div>
+                    <div class="proj-desc">Describe what this project does and what problem it solves. Highlight what you built and what you learned along the way.</div>
+                    <div class="proj-stack"><span class="stack-tag">Java</span><span class="stack-tag">MySQL</span><span class="stack-tag">XAMPP</span></div>
+                    <div class="proj-actions">
+                        <a href="#" class="proj-btn proj-btn-gh">⬡ GitHub</a>
+                        <a href="#" class="proj-btn proj-btn-live">↗ Live Demo</a>
+                        <a href="#" class="proj-btn proj-btn-li">in LinkedIn Post</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="project-card reveal">
+            <div class="proj-img">
+                <div class="proj-img-placeholder" style="background:linear-gradient(135deg,#0d1f1c,#071510);">
+                    <div class="proj-img-icon">📱</div>
+                    <div class="proj-img-label">ADD SCREENSHOT</div>
+                </div>
+                <div class="proj-img-top">
+                    <div class="proj-status s-done">Completed</div>
+                </div>
+            </div>
+            <div class="proj-body">
+                <div class="proj-name">Mobile App Project</div>
+                <div class="proj-desc">A Flutter mobile application built for Android. Add a short description about what the app does and the problem it solves for users.</div>
+                <div class="proj-stack"><span class="stack-tag">Flutter</span><span class="stack-tag">Dart</span><span class="stack-tag">Firebase</span></div>
+                <div class="proj-actions">
+                    <a href="#" class="proj-btn proj-btn-gh">⬡ GitHub</a>
+                    <a href="#" class="proj-btn proj-btn-li">in LinkedIn Post</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="project-card reveal">
+                <div class="proj-img">
+                    <div class="proj-img-placeholder" style="background:linear-gradient(135deg,#160d2b,#0d0718);">
+                        <div class="proj-img-icon">🌐</div>
+                        <div class="proj-img-label">ADD SCREENSHOT</div>
+                    </div>
+                    <div class="proj-img-top">
+                        <div class="proj-status s-wip">In Progress</div>
+                    </div>
+                </div>
+                    <div class="proj-body">
+                        <div class="proj-name">Portfolio Website</div>
+                        <div class="proj-desc">This portfolio you're viewing right now! A fully responsive personal portfolio built from scratch to showcase my skills and work.</div>
+                        <div class="proj-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span class="stack-tag">JavaScript</span></div>
+                        <div class="proj-actions">
+                            <a href="#" class="proj-btn proj-btn-gh">⬡ GitHub</a>
+                            <a href="#" class="proj-btn proj-btn-live">↗ Live Demo</a>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- ADD MORE -->
+            <div class="add-card reveal">
+                <div class="add-plus">＋</div>
+                <div class="add-text">Your next project</div>
+                <div class="add-hint">// coming_soon.exe</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="eyebrow reveal">04 — Contact</div>
+        <h2 class="sec-title reveal">Let's Connect</h2>
+        <div class="contact-grid">
+            <div class="reveal">
+                <h3>Let's Build Something Together</h3>
+                <p>Open to internship opportunities, collaborations, and exciting projects. Whether you have a question or just want to say hi — my inbox is always open!</p>
+                <div class="contact-items">
+                    <a href="mailto:tharindu@email.com" class="contact-item">
+                        <div class="c-ico">✉</div>
+                        <div class="c-inf"><div class="c-lbl">Email</div><div class="c-val">tharindu@email.com</div></div>
+                        <span class="c-arr">→</span>
+                    </a>
+                    <a href="https://github.com/yourusername" class="contact-item">
+                        <div class="c-ico">&lt;/&gt;</div>
+                        <div class="c-inf"><div class="c-lbl">GitHub</div><div class="c-val">github.com/yourusername</div></div>
+                        <span class="c-arr">→</span>
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" class="contact-item">
+                        <div class="c-ico">in</div>
+                        <div class="c-inf"><div class="c-lbl">LinkedIn</div><div class="c-val">linkedin.com/in/yourusername</div></div>
+                        <span class="c-arr">→</span>
+                    </a>
+                </div>
+            </div>
+            <form class="contact-form reveal" onsubmit="handleForm(event)">
+                <div class="form-row">
+                    <div class="form-group"><label class="form-label">Name</label><input class="form-input" type="text" placeholder="Your name" required></div>
+                    <div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" placeholder="you@email.com" required></div>
+                </div>
+                <div class="form-group"><label class="form-label">Subject</label><input class="form-input" type="text" placeholder="Internship / Collaboration / Just saying hi"></div>
+                <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" placeholder="Hey Tharindu, I'd love to..."></textarea></div>
+                <button class="send-btn" type="submit">Send Message →</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+    <div class="footer-copy">© 2025 <span>VgTharindu</span> · Code with purpose, build with passion."</div>
+    <div class="social-links">
+        <a href="https://github.com/yourusername" class="soc-link">&lt;/&gt;</a>
+        <a href="https://linkedin.com/in/yourusername" class="soc-link">in</a>
+        <a href="mailto:tharindu@email.com" class="soc-link">✉</a>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
