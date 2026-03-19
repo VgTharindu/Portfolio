@@ -72,15 +72,51 @@ window.addEventListener('resize', checkAll);
 checkAll();
 setTimeout(checkAll, 300);
 
-/* ══ CONTACT FORM ══ */
-function handleForm(e) {
+/* ══ CONTACT FORM — Formspree AJAX ══ */
+var contactForm = document.getElementById('contactForm');
+var sendBtn = document.getElementById('sendBtn');
+var formMsg = document.getElementById('form-msg');
+
+// ⚠️  PASTE YOUR FORMSPREE URL BELOW (replace YOUR_FORM_ID)
+var FORMSPREE_URL = 'https://formspree.io/f/xyknowdv';
+
+contactForm.addEventListener('submit', function(e) {
   e.preventDefault();
-  var btn = e.target.querySelector('.send-btn');
-  btn.textContent = 'Message Sent ✓';
-  btn.style.background = '#22c55e';
-  setTimeout(function() {
-    btn.textContent = 'Send Message →';
-    btn.style.background = '';
-    e.target.reset();
-  }, 3000);
-}
+  sendBtn.textContent = 'Sending...';
+  sendBtn.disabled = true;
+  formMsg.textContent = '';
+  formMsg.style.color = '';
+
+  var data = new FormData(contactForm);
+
+  fetch(FORMSPREE_URL, {
+    method: 'POST',
+    body: data
+  })
+  .then(function(res) {
+    if (res.ok) {
+      formMsg.textContent = '✓ Message sent! I will get back to you soon.';
+      formMsg.style.color = '#4ade80';
+      sendBtn.textContent = 'Sent ✓';
+      sendBtn.style.background = '#22c55e';
+      contactForm.reset();
+      setTimeout(function() {
+        sendBtn.textContent = 'Send Message →';
+        sendBtn.style.background = '';
+        sendBtn.disabled = false;
+        formMsg.textContent = '';
+      }, 4000);
+    } else {
+      formMsg.textContent = 'Something went wrong. Please try again.';
+      formMsg.style.color = '#f87171';
+      sendBtn.textContent = 'Send Message →';
+      sendBtn.disabled = false;
+    }
+  })
+  .catch(function() {
+    formMsg.textContent = 'Network error. Please check your connection.';
+    formMsg.style.color = '#f87171';
+    sendBtn.textContent = 'Send Message →';
+    sendBtn.disabled = false;
+  });
+});
