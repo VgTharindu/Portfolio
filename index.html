@@ -314,23 +314,36 @@
                     </a>
                 </div>
             </div>
-            <form class="contact-form" action="https://api.web3forms.com/submit" method="post">
+             <form class="contact-form reveal"
+        action="https://api.web3forms.com/submit"
+        method="POST">
 
-                <!-- Your Web3Forms Access Key - replace YOUR_ACCESS_KEY -->
-                <input type="hidden" name="access_key" value="008d013b-0c6d-494b-bc53-46cbb825ec3c">
-                <!-- Optional: custom subject in your email inbox -->
-                <input type="hidden" name="subject" value="New message from Portfolio">
-                <!-- Redirect back to your site after submit -->
-                <input type="hidden" name="redirect" value="https://vgtharindu-portfolio.vercel.app/">
+      <input type="hidden" name="access_key" value="008d013b-0c6d-494b-bc53-46cbb825ec3c">
+      <input type="hidden" name="subject" value="New message from Portfolio">
+      <input type="hidden" name="redirect" value="https://vgtharindu-portfolio.vercel.app/">
+      <input type="hidden" name="from_name" value="Portfolio Contact Form">
+      <input type="hidden" name="botcheck" value="">
 
-                <div class="form-row">
-                    <div class="form-group"><label class="form-label">Name</label><input class="form-input" type="text" placeholder="Your name" required></div>
-                    <div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" placeholder="you@email.com" required></div>
-                </div>
-                <div class="form-group"><label class="form-label">Subject</label><input class="form-input" type="text" placeholder="Internship / Collaboration / Just saying hi"></div>
-                <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" placeholder="Hey Tharindu, I'd love to..."></textarea></div>
-                <button class="send-btn" type="submit">Send Message →</button>
-            </form>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Name</label>
+          <input class="form-input" type="text" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input class="form-input" type="email" name="email" placeholder="you@email.com" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Subject</label>
+        <input class="form-input" type="text" name="topic" placeholder="Internship / Collaboration / Just saying hi">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Message</label>
+        <textarea class="form-textarea" name="message" placeholder="Hey Tharindu, I'd love to..."></textarea>
+      </div>
+      <button class="send-btn" type="submit">Send Message &#8594;</button>
+    </form>
         </div>
     </section>
 
