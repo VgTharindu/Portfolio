@@ -1184,6 +1184,7 @@ footer {
   font-family: var(--mono);
   font-size: 12px;
   color: var(--text2);
+
 }
 .footer-copy span {
   color: var(--violet3);
