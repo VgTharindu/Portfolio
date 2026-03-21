@@ -90,7 +90,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:0 60px;height:60px;d
 .avatar-hint{font-family:var(--mono);font-size:9px;color:var(--text2);text-align:center;line-height:1.7;letter-spacing:1px;opacity:.5;padding:8px 14px;border:1px dashed rgba(124,92,252,.2);border-radius:6px;}
 .photo-tag{position:absolute;background:rgba(10,16,28,.94);border:1px solid var(--border2);border-radius:10px;padding:7px 13px;font-size:12px;font-weight:600;color:var(--text);display:flex;align-items:center;gap:7px;backdrop-filter:blur(12px);}
 .photo-tag.tl{top:-16px;left:-26px;animation:tagFlt 3s ease-in-out infinite;}
-.photo-tag.br{bottom:-23px;right:-26px;animation:tagFlt 3s ease-in-out infinite;animation-delay:-1.5s;}
+.photo-tag.br{bottom:-2px;right:-26px;animation:tagFlt 3s ease-in-out infinite;animation-delay:-1.5s;}
 @keyframes tagFlt{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 .tdot{width:7px;height:7px;border-radius:50%;}
 .tdot.g{background:#22c55e;box-shadow:0 0 6px rgba(34,197,94,.7);}
