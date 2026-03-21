@@ -17,7 +17,7 @@ document.addEventListener('mousemove', function(e) {
 })();
 
 /* ══ TYPING ══ */
-var phrases = ['Software Developer','Mobile App Developer','Java Developer','Flutter Dev','Full Stack Dev','Problem Solver','Open Source Fan'];
+var phrases = ['Software Developer','Mobile App Developer','Java Developer','Full Stack Dev',"Web Developer",'Problem Solver','Open Source Fan'];
 var pi = 0, ci = 0, deleting = false;
 var typEl = document.getElementById('typingText');
 var blink = true;
