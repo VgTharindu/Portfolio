@@ -6,6 +6,7 @@
   --violet: #7c5cfc;
   --violet2: #5b3ef0;
   --violet3: #a78bfa;
+  --blue: #2061ac;
   --rose: #f0537a;
   --amber: #f5a623;
   --cyan: #22d3ee;
@@ -90,12 +91,12 @@ nav {
 .nav-logo {
   font-family: var(--mono);
   font-size: 15px;
-  color: var(--violet);
+  color: var(--text);
   text-decoration: none;
   letter-spacing: 1px;
 }
 .nav-logo span {
-  color: var(--text3);
+  color: var(--violet);
 }
 .nav-links {
   list-style: none;
@@ -105,12 +106,12 @@ nav {
 .nav-links a {
   font-size: 13px;
   font-weight: 500;
-  color: var(--text2);
+  color: var(--text);
   text-decoration: none;
   transition: color 0.2s;
 }
 .nav-links a:hover {
-  color: var(--text);
+  color: var(--text2);
 }
 
 /* ── HERO ── */
@@ -240,7 +241,7 @@ nav {
 .hero-greeting {
   font-family: var(--mono);
   font-size: 12px;
-  color: var(--violet3);
+  color: var(--text);
   letter-spacing: 3px;
   margin-bottom: 16px;
   display: flex;
@@ -324,7 +325,7 @@ nav {
   cursor: pointer;
 }
 .btn-p {
-  background: var(--violet);
+  background: var(--blue);
   color: #fff;
   border: none;
 }
@@ -353,7 +354,7 @@ nav {
   font-family: var(--display);
   font-size: 26px;
   font-weight: 700;
-  color: var(--violet);
+  color: var(--text);
   letter-spacing: -1px;
   line-height: 1;
 }
@@ -1153,7 +1154,7 @@ section {
   min-height: 105px;
 }
 .send-btn {
-  background: var(--violet);
+  background: var(--blue);
   color: #fff;
   border: none;
   border-radius: 9px;
