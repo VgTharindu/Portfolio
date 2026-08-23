@@ -17,7 +17,7 @@ document.addEventListener('mousemove', function(e) {
 })();
 
 /* ══ TYPING ══ */
-var phrases = ['Software Developer','React Developer','Java Developer','Full Stack Dev',"Web Developer",'Problem Solver','Open Source Fan'];
+var phrases = ['Software Developer','React Developer','Java Developer','Full Stack Dev','Web Developer','Problem Solver','Open Source Fan'];
 var pi = 0, ci = 0, deleting = false;
 var typEl = document.getElementById('typingText');
 var blink = true;
@@ -26,8 +26,8 @@ setInterval(function() {
   blink = !blink;
   typEl.style.borderRightColor = blink ? '#f5a623' : 'transparent';
 }, 500);
-typEl.style.borderRight = '2px solid #f5a623';
-typEl.style.paddingRight = '3px';
+typEl.style.borderRight    = '2px solid #f5a623';
+typEl.style.paddingRight   = '3px';
 
 function runTyping() {
   var phrase = phrases[pi];
@@ -48,14 +48,12 @@ runTyping();
 function checkAll() {
   var wH = window.innerHeight;
 
-  /* Reveal elements */
   document.querySelectorAll('.reveal').forEach(function(el) {
     if (el.getBoundingClientRect().top < wH - 50) {
       el.classList.add('visible');
     }
   });
 
-  /* Skill bars */
   document.querySelectorAll('.skill-cat').forEach(function(cat) {
     if (cat.getBoundingClientRect().top < wH - 30 && !cat.dataset.filled) {
       cat.dataset.filled = '1';
@@ -68,8 +66,34 @@ function checkAll() {
 
 window.addEventListener('scroll', checkAll);
 window.addEventListener('resize', checkAll);
-/* Run on load AND after fonts render */
 checkAll();
 setTimeout(checkAll, 300);
 
+/* ══ PDF MODAL ══ */
+/* Usage: openPDF(filePath, title, downloadName)
+   Example: openPDF('./assets/Dr_Lakmal_Fonseka_Letter.pdf', 'Letter of Appreciation', 'Dr_Lakmal_Fonseka_Letter.pdf') */
 
+function openPDF(filePath, title, downloadName) {
+  document.getElementById('pdfFrame').src                  = filePath;
+  document.getElementById('pdfModalTitle').textContent     = title;
+  document.getElementById('pdfDownloadBtn').href           = filePath;
+  document.getElementById('pdfDownloadBtn').setAttribute('download', downloadName);
+  document.getElementById('pdfModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closePDF() {
+  document.getElementById('pdfModal').classList.remove('active');
+  document.getElementById('pdfFrame').src = '';
+  document.body.style.overflow = '';
+}
+
+/* Close when clicking dark overlay */
+document.getElementById('pdfModal').addEventListener('click', function(e) {
+  if (e.target === this) closePDF();
+});
+
+/* Close with Escape key */
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closePDF();
+});
